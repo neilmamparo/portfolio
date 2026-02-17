@@ -1,0 +1,137 @@
+body {
+    background-color: #f0f0f0;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0px 12px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgb(26, 26, 26);  
+    min-height: 100px;
+    padding: 0 2rem;
+    position: relative;
+}
+
+.logo {
+    width: 5rem;
+    border-radius: 50%;
+    outline: 2px solid rgb(201, 201, 201);
+    height: 5rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    z-index: 2;
+    flex-shrink: 0;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    white-space: nowrap;
+    z-index: 2;
+    margin: 0; 
+    flex-shrink: 0; 
+}
+
+.title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    z-index: 1;
+    max-width: calc(100% - 400px);
+}
+
+h2 {
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+}
+
+.projectcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 2rem;;
+    gap: 1rem;
+}
+
+.project {
+    background-color: white;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+    width: 90%;
+    height: 17rem;
+    max-width: 600px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 900px) {
+    .header { 
+        justify-content: left;
+        min-height: 80px;
+    }
+
+    .logo {
+        width: 3.5rem;
+        height: 3.5rem;
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+    
+    h2 {
+        flex: 1;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .header {
+        padding-bottom: 0.3rem;  /* Add space for wrapped content */
+        justify-content: center;
+    }
+    
+    .logo {
+        width: 3.5rem;
+        height: 3.5rem;
+        margin-top: 1rem;
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    h1 {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    
+    .title {
+        text-align: center;
+        position: relative;  
+        left: auto;          
+        transform: none;     
+        width: 100%;         
+        margin-top: 0;    /* Increase margin */
+        order: 3;
+        flex-basis: 100%;    /* Force to new line */
+        max-width: 100%;     /* Remove max-width restriction */
+    }
+    
+    h2 {
+        font-size: 1.2rem;
+    }
+}
+
+
