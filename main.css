@@ -15,6 +15,7 @@ body {
     position: relative;
 }
 
+/* headshot styles*/
 .logo {
     width: 5rem;
     border-radius: 50%;
@@ -55,14 +56,14 @@ h2 {
 }
 
 h3 {
-    margin-top: 0rem;
-    margin-bottom: 0rem;
+    margin: 0;
     display: flex;
     flex-direction: row;
 }
 
+/* Link styles */
 h3 a {
-    color: #664ba6;  /* Purple-gray */
+    color: #664ba6; 
     text-decoration: none;
 }
 
@@ -72,6 +73,7 @@ h3 a:hover {
     transition: color 0.2s ease;
 }
 
+/* Project styles */
 .projectcontainer {
     display: flex;
     flex-direction: row;
@@ -81,7 +83,7 @@ h3 a:hover {
     padding: 1rem;
     gap: 1rem;
 }
-
+ 
 .project {
     background-color: white;
     border: 1px solid #eee;
@@ -95,21 +97,16 @@ h3 a:hover {
     flex-direction: column;
 }
 
+/* project tools */
 .tools {
-    margin-top: 0;
     margin-left: auto;
     font-size: 0.65rem;
     font-weight: 500;
     color: #666;
     display: flex;
-    gap: 0rem;
 }
 
-.project h3 .tools::before {
-    content: " ";
-    white-space: pre;
-}
-
+/* project picture */
 .thumbnail {
     width: 100%;
     height: 300px;
@@ -118,6 +115,7 @@ h3 a:hover {
     margin-top: auto;
 }
 
+/* medium screens */
 @media (max-width: 900px) {
     .header { 
         justify-content: left;
@@ -127,8 +125,7 @@ h3 a:hover {
     .logo {
         width: 3.5rem;
         height: 3.5rem;
-        margin-right: 0.5rem;
-        margin-left: 0.5rem;
+        margin: 0 0.5rem;
     }
 
     h1 {
@@ -136,11 +133,11 @@ h3 a:hover {
     }
     
     h2 {
-        flex: 1;
         font-size: 1.2rem;
     }
 }
 
+/* small screens */
 @media (max-width: 500px) {
     .header {
         padding-bottom: 0.3rem;  
@@ -150,11 +147,9 @@ h3 a:hover {
     .logo {
         width: 3.5rem;
         height: 3.5rem;
-        margin-top: 1rem;
-        margin-right: 0.5rem;
-        margin-left: 0.5rem;
-        margin-bottom: 0.5rem;
+        margin: 1rem 0.5rem 0.5rem;
     }
+    
     h1 {
         flex-basis: 100%;
         text-align: center;
@@ -166,17 +161,13 @@ h3 a:hover {
         left: auto;          
         transform: none;     
         width: 100%;         
-        margin-top: 0;    /* Increase margin */
+        margin-top: 0;  
         order: 3;
-        flex-basis: 100%;    /* Force to new line */
-        max-width: 100%;     /* Remove max-width restriction */
+        flex-basis: 100%;    
+        max-width: 100%;     
     }
     
     h2 {
         font-size: 1.2rem;
     }
-
-    
 }
-
-
